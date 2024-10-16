@@ -1,0 +1,12 @@
+#sql lite
+services:
+  webapp:
+    build: . # build with file in current dir.
+    ports:
+      - "3000:3000" # 3000 host to 3000 container
+    volumes:
+      - ./database:/app/database # Map the database directory to the host system
+    container_name: webapp-container #
+    restart: always # restart the container automatically if stops
+volumes:
+  database:
