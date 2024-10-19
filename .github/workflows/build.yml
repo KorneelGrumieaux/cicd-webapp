@@ -24,3 +24,10 @@ jobs:
 
       - name: Lint code
         run: npx eslint . --no-error-on-unmatched-pattern
+      - name: Build Docker image
+        uses: docker/build-push-action@v3
+        with:
+          context: . # Path to the directory containing your Dockerfile
+          file: ./Dockerfile # Path to your Dockerfile
+          tags: korneelgrumieau/webapp:latest # Tag for the Docker image
+          push: false # Do not push the image yet
