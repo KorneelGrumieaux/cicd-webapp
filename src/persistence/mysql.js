@@ -1,6 +1,6 @@
-import knex from "knex";
-import Boom from "@hapi/boom";
-import generateFakeData from "./generateFakeData.js";
+import knex from 'knex';
+import Boom from '@hapi/boom';
+import generateFakeData from './generateFakeData.js';
 
 let knexInstance;
 
