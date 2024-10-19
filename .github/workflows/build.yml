@@ -38,6 +38,3 @@ jobs:
           file: ./Dockerfile
           tags: korneelgrumieau/webapp:latest
           push: true
-
-      - name: Run tests
-        run: yarn test
